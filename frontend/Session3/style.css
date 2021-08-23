@@ -1,0 +1,14 @@
+.parent{
+    border:4px solid black;
+}
+
+.child{
+    display: inline-block;
+    background-color: rgb(255, 196, 0);
+    width: 230px;
+    height: 80px; 
+    
+}
+.child:hover{
+    background-color: cadetblue;
+}
