@@ -1,0 +1,40 @@
+.clickme{
+    background-color:yellowgreen ;
+    color: darkblue;     
+    padding: 20px ;
+    font-size: 20px;
+    border:darkblue;
+    cursor: pointer;
+}
+
+.click{
+position: relative;
+display:inline-block;
+
+}
+
+.clickme-content{
+    display: none;
+    position:absolute;
+    background-color: turquoise;
+    min-width: 180px;
+    box-shadow: 0px 10px 20px 0px;
+    z-index: 1;
+
+}
+
+.clickme-content a{
+    color:rgb(58, 43, 6);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.clickme-content a:hover{
+    background-color: darkorange;
+
+}
+
+.click:hover .clickme-content{
+    display: block;
+}
