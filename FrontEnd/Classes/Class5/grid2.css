@@ -1,0 +1,14 @@
+.container{
+    border: 2px solid black;
+    height: 544px;
+    width: 100%;
+    display: grid;
+
+}
+
+.item{
+
+    background-color: chartreuse;
+    border: 2px solid black;
+
+}
