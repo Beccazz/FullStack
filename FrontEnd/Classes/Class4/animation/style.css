@@ -1,0 +1,38 @@
+div{
+
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: darkcyan;
+    animation-name: example;
+    animation-duration: 5s;
+
+}
+
+@keyframes example{
+    0%{
+        background-color: darkgoldenrod;
+        left: 0px;
+        top: 0px;
+    }
+    20%{
+        background-color: darkmagenta;
+        left: 200px;
+        top: 100px;
+    }
+    40%{
+        background-color: darkorange;
+        left: 400px;
+        top: 50px;
+    }
+    60%{
+        background-color: darkturquoise;
+        left: 600px;
+        top: 0px;
+    }
+    100%{
+        background-color: deeppink;
+        left: 1000px;
+        top: 0px;
+    }
+}
