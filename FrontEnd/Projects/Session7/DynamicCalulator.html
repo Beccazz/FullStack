@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-<div class="fg">
+<div class="box">
     <label for="">number 1</label><br>
 <input id="num1" type="number" value="">
 <br>
@@ -21,9 +21,9 @@
 <br>
 <br>
 <button onclick="add()">add</button>
-<button>sub</button>
-<button>mul</button>
-<button>div</button>
+<button onclick="sub()">sub</button>
+<button onclick="mul()">mul</button>
+<button onclick="div()">div</button>
 
 <h1 id="k"></h1>
 
@@ -39,6 +39,29 @@ function add(){
     document.getElementById('k').innerHTML=value
 }
 
+function sub(){
+
+var a=document.getElementById('num1').value;
+var b=document.getElementById('num2').value;
+var value=Number(a)-Number(b)
+document.getElementById('k').innerHTML=value
+}
+
+function mul(){
+
+var a=document.getElementById('num1').value;
+var b=document.getElementById('num2').value;
+var value=Number(a)*Number(b)
+document.getElementById('k').innerHTML=value
+}
+
+function div(){
+
+var a=document.getElementById('num1').value;
+var b=document.getElementById('num2').value;
+var value=Number(a)/Number(b)
+document.getElementById('k').innerHTML=value
+}
 
 
 </script>
