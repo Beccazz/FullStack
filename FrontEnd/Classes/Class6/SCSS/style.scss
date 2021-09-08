@@ -1,34 +1,19 @@
-
-$cooker: pink;
-$pam: 40px;
-
+@import "./common/colors";
+@import "./common/fonts";
+@import "./common/mixin";
 
 h1{
     background-color: $cooker;
     color: white;
     font-size: $pam;
-
 }
 
 h2{
     font-size: 30px + 30px;
 }
 
-
-
-
-@mixin sister{
-    font-size: 20px;
-}
-
-@mixin brother ($slap,$punch,$kick){
-    background-color: $slap;
-    width: $punch;
-    height: $kick;
-}
-
 .parent{
-    @include brother(red,200px ,200px );
+    @include brother(red,300px ,300px );
     @include sister;
     .child{
         @include brother(pink,200px ,200px );
