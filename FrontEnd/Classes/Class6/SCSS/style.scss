@@ -1,6 +1,7 @@
 @import "./common/colors";
 @import "./common/fonts";
 @import "./common/mixin";
+@import "./common/secondary";
 
 h1{
     background-color: $cooker;
@@ -10,6 +11,10 @@ h1{
 
 h2{
     font-size: 30px + 30px;
+}
+
+.aboutsec{
+    background-color: $color;
 }
 
 .parent{

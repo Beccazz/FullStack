@@ -8,6 +8,10 @@ h2 {
   font-size: 60px;
 }
 
+.aboutsec {
+  background-color: #ff7b00;
+}
+
 .parent {
   background-color: red;
   width: 300px;
