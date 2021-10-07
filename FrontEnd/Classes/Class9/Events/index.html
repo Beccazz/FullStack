@@ -16,12 +16,12 @@
         
 
         <div class="grandparent">
-            <p>grandparent</p>
+        
 
             <div class="parent">
-                parent
+                
                 <div class="child">
-                    child
+                  
                 </div>
             </div>
 
@@ -29,6 +29,16 @@
 
 
 
-        <script src="" async defer></script>
+        <script>
+            const grandparent=document.querySelector('.grandparent')
+            const parent=document.querySelector('.parent')
+            const child=document.querySelector('.child')
+
+            grandparent.addEventListener("click",(e)=>{
+                console.log(e);
+            })
+
+
+        </script>
     </body>
 </html>
