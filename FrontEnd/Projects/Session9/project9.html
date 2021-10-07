@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <img class="car" width="300px" height="300px" src="car.jpg" alt="">
+    <img class="paper" width="300px" height="300px" src="paper.jpg" alt=""> <br>
+    <img class="pot" width="300px" height="300px" src="pot.jpg" alt="">
+    <img class="bear" width="300px" height="300px" src="teddy bear.jpg" alt=""> <br>
+
+    <script>
+        const car = document.querySelector('.car')
+        car.addEventListener("click", (e) => {
+            console.log(e.target);
+            location.replace("https://www.carsome.my/")
+        })
+
+        const paper = document.querySelector('.paper')
+
+        paper.addEventListener("click", (e) => {
+            console.log(e.target);
+            location.replace("https://www.thejournalshop.com/")
+        })
+
+        const pot = document.querySelector('.pot')
+        pot.addEventListener("click", (e) => {
+            console.log(e.target);
+            location.replace("https://www.bunnings.com.au/")
+        })
+
+        const bear = document.querySelector('.bear')
+        bear.addEventListener("click", (e) => {
+            console.log(e.target);
+            location.replace("https://www.giantteddy.com/")
+        })
+    </script>
+</body>
+
+</html>
