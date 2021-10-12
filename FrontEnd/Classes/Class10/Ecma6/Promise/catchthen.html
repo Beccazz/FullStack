@@ -2,7 +2,7 @@
     function fun(){
         return new Promise((resp,rej)=>{
             setTimeout(()=>{
-                const err=false;
+                const err=true;
                 if(!err){
                     console.log("thank you juice");
                     resp();
@@ -16,6 +16,8 @@
 
 fun().then(()=>{
 console.log("im getting executed because promise fulfilled")
+}).catch(()=>{
+    console.log("error because sagar is not picking the phone")
 })
 
 </script>
