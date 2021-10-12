@@ -1,0 +1,16 @@
+<script>
+    function fun(){
+        return new Promise((resp,rej)=>{
+            setTimeout(()=>{
+                const err=true;
+                if(!err){
+                    console.log("thank you juice");
+                    resp()
+                }else{
+                    console.log("sorry im busy");
+                    rej();
+                }
+            },3000)
+        })
+    }
+</script>
